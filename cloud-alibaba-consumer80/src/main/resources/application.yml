@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-alibaba-nacos-consumer
+  cloud:
+    #配置nacos的服务地址
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+#消费者要访问的微服务名称
+service-url:
+  nacos-user-service: http://cloud-alibaba-nacos-provider
