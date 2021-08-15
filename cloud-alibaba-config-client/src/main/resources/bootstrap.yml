@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      #服务器地址
+      server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+      config:
+        #配置中心地址
+        server-addr: ${spring.cloud.nacos.server-addr}
+        #指定配置的格式，有yaml和properties两种
+        file-extension: yaml
+#        group: GROUP_TEST
+#        namespace: e69dbe0a-233d-4b73-a173-89e9e8a1d041
+

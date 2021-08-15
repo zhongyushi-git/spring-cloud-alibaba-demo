@@ -1,5 +1,8 @@
 spring:
+  application:
+    name: nacos-config-client
   profiles:
     active: dev #开发环境
 #    active: test #测试环境
 #    active: info #info环境
+

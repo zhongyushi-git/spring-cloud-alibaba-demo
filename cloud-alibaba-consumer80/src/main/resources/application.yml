@@ -5,11 +5,26 @@ spring:
   application:
     name: cloud-alibaba-nacos-consumer
   cloud:
-    #配置nacos的服务地址
+    #配置nacos地址
     nacos:
+      #服务器地址
+      server-addr: 127.0.0.1:8848
+      #服务注册与发现地址
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: ${spring.cloud.nacos.server-addr}
 
-#消费者要访问的微服务名称
-service-url:
-  nacos-user-service: http://cloud-alibaba-nacos-provider
+
+feign:
+  client:
+    config:
+      #指定全局
+      default:
+        #连接超时时间
+        connectTimeout: 5000
+        #服务等待时间
+        readTimeout: 5000
+        loggerLevel: full
+
+logging:
+  level:
+    com.zys.cloud.client.UserClient: debug

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-alibaba-config-client3344</artifactId>
+    <artifactId>cloud-alibaba-config-client</artifactId>
 
     <dependencies>
         <dependency>
@@ -21,6 +21,10 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--springcloud alibaba nacos-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
