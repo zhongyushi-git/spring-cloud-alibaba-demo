@@ -13,7 +13,7 @@
         <module>cloud-alibaba-consumer80</module>
         <module>cloud-alibaba-provider8002</module>
         <module>cloud-alibaba-config-client</module>
-        <module>cloud-alibaba-sentinel8401</module>
+        <module>cloud-alibaba-sentinel</module>
     </modules>
     <!--统一管理jar包版本-->
     <properties>
